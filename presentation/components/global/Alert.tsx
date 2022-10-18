@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { selectGlobalState, toggleAlert } from "../../../app/GlobalSlice";
 import { useAppDispatch, useAppSelector } from "../../../app/store";
-import { tailwindTransition } from "../../../styles/tailwind/Transition";
+import { tailwindTransition } from "../../styles/tailwind/Transition";
 
 type Props = { text: string }
 
