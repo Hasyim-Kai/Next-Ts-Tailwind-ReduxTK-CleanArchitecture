@@ -1,0 +1,34 @@
+@use "./export/mixin" as m;
+
+.wrapper{
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.btn {
+    margin-top: 2rem;
+    @include m.btn1;
+}
+
+.dropdown {
+    margin-top: 5px; 
+    position: absolute;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: rgb(26, 26, 26);
+    transition: all ease-in 0.2s;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-7px);
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}

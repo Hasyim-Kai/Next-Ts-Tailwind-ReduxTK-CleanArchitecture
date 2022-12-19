@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.tailwindTransition {
+  @apply transition-all ease-in-out duration-300;
+}
+
+.simpleInput {
+  @apply pt-1 text-lg border-b border-pink-500 w-full focus:outline-none mb-7;
+}
+
+.cardHover {
+  @apply hover:scale-110 hover:shadow-2xl hover:bg-white cursor-pointer mx-5 lg:mx-0 transition-all ease-in-out duration-300;
+}
+
+.glassCard {
+  @apply bg-white bg-opacity-20 backdrop-blur-lg;
+}

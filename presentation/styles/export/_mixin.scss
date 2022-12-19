@@ -1,0 +1,18 @@
+@use "var" as v;
+
+@mixin transition {
+    transition: all ease-in 0.5s;
+}
+
+@mixin btn1 {
+    border: 0ch;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: v.$color1;
+    @include transition();
+
+    &:hover {
+        background: v.$color1hover;
+    }
+}
