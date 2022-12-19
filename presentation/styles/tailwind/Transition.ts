@@ -1,1 +1,0 @@
-export const tailwindTransition = `transition-all ease-in-out duration-300`
